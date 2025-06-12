@@ -1,2 +1,3 @@
-# Session 1
-Basic Programming (Python) - Spring 2025
+# جلسه چهارم
+
+## لیست و شرط

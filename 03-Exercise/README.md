@@ -18,7 +18,15 @@ hamid
 ```
 I am hamid and I am 23 years old.
 ```
- 
+**پاسخ.**
+```python
+name = input()
+age = input()
+#One way
+print('I am ',name," and I am ",age," years old.")
+#Another way
+print(f"I am {name} and I am {age} years old.")
+```
 **پرسش دوم.** دو مدل پیراهن داریم و می‌خواهیم به ترتیب قیمت و تعداد هر کدام را از کاربر گرفته و قیمت کل را محاسبه کنیم.
  
 قالب ورودی:
@@ -31,6 +39,16 @@ number of shirt B
 خروجی:
 ```
 The total cost is n.
+```
+**پاسخ.**
+```python
+cost_a = float(input("Enter the cost of A: "))
+num_a = int(input("Enter the number of A: "))
+cost_b = float(input("Enter the cost of B: "))
+num_b = int(input("Enter the number of B: "))
+
+tot_cost = cost_a*num_a + cost_b*num_b
+print("The total cost is",tot_cost)
 ```
 ## چئد چیز دیگر در مورد رشته‌ها
 - پایان دستور print

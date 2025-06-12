@@ -19,6 +19,7 @@ https://www.python.org/downloads/
 - Spyder
 - Jupyter Notebook
 - VSCode
+
 که در این درس ما از مورد چهارم استفاده می‌کنیم.
 برای نصب VSCode می‌توانید به سادگی از پیوند زیر نسخه مناسب برای رایانه‌ی خود را بارگیری کنید:
 

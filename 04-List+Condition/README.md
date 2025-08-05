@@ -14,9 +14,16 @@ list4 = ['a', 'baba', 3, True]
 بر روی لیست‌ها می‌توانیم کارهای مختلفی را انجام دهیم؛ افزودن یک عضو، دسترسی به یک عضو، به‌هم‌چسباندن، شمارش اعضا و ... .
 ```python
 aircrafts = ['F-4', 'F-5']
+# Append a new member to the list
 aircrafts.append('F-14')
+# Find a member in a list and return its first index
 aircrafts.find('F-4')
+# Count the repeatition of a member
 aircrafts.count('F-4')
 print(aircrafts[1])
 print(aircrafts[1:5])
 ```
+علاوه بر موارد ذکر شده، لیست‌ها توابع دیگری هم دارند که با گذاشتن نقطه پس از نام یک لیست می‌توانید فهرست آن‌ها را ببینید.
+
+# شرط
+اولین قدم برای اینکه برنامه‌ای جدی‌تر بنویسیم این است که بتوانیم در برنامه، حالت‌های مختلف را چک کنیم و برای هر حالت، عملیات متناسب را انجام دهیم.

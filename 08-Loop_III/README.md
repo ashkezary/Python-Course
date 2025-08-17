@@ -8,20 +8,29 @@ i = 0
 n = len(s)
 flag = True
 while i<n:
- if s[i]=='q':
-  if i==n-1:
-   flag = False
-  elif s[i+1]!='u':
-   flag = False
-  i += 1
+    if s[i]=='q':
+        if i==n-1:
+            flag = False
+        elif s[i+1]!='u':
+            flag = False
+    i += 1
 if flag:
- print('correct')
+    print('correct')
 else:
- print('wrong')
+    print('wrong')
 ```
 ### مثال دو: پیمایش روی لیست
 
 - برنامه‌ای بنویسید که عدد طبیعی n را گرفته و سپس n عدد از کاربر گرفته و کمینه آن‌ها را چاپ کند.
+```python
+n = int(input())
+mini = float(input())
+for _ in range(n-1):
+    x = float(input())
+    if x<mini:
+        mini = x
+print(mini)
+```
 
 ☑️ استفاده از while در جایی که به نظر نمی‌رسد
 

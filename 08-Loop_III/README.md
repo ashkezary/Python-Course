@@ -25,22 +25,43 @@ else:
 ```python
 n = int(input())
 mini = float(input())
-for _ in range(n-1):
+i = 0
+while i<n-1:
     x = float(input())
     if x<mini:
         mini = x
+    i += 1
 print(mini)
 ```
+### مثال سه: اول بودن یا نبود
+برنامه‌ای بنویسید که عدد طبیعی n را گرفته و اول بودن یا نبودن آن را مشخص کند.
 
-☑️ استفاده از while در جایی که به نظر نمی‌رسد
-
-- برنامه‌ای بنویسید که عدد طبیعی n را گرفته و اول بودن یا نبودن آن را مشخص کند.
-
-- برنامه‌ای بنویسید که عدد طبیعی n را گرفته و شمارنده‌های آن را چاپ کند.
-
+```python
+n = int(input())
+i = 2
+is_prime = False
+while i<n:
+    if n%i==0:
+        is_prime = True
+    i += 1
+if is_prime:
+    print(f"{n} is prime.")
+else:
+    print(f"{n} is not prime.")
+```
+### مثال چهار: شمارنده‌های یک عدد
+برنامه‌ای بنویسید که عدد طبیعی n را گرفته و شمارنده‌های آن را چاپ کند.
+```python
+n = int(input())
+i = 1
+dividers = []
+while i<=n:
+    if n%i==0:
+        dividers.append(i)
+    i += 1
+print(dividers)
+```
 ☑️ استفاده از break برای پایان دادن به حلقه
-
-☑️ استفاده از while های تودرتو
 
 - برنامه‌ای بنویسید که عدد طبیعی n را گرفته و تمام اعداد اول کوچکتر از آن را چاپ کند.
 

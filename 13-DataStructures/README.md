@@ -1,23 +1,27 @@
-# جلسه سیزدهم ساختمان داده
+# جلسه سیزدهم (ساختمان داده)
 
-## مجموعه (set)
+در زبان‌های برنامه‌نویسی برای نگهداشتن تعدادی داده، می‌توانیم از ساختمان‌داده‌های مختلفی استفاده کنیم. در این درس تا اینجای کار با داده‌ساختار لیست آشنا شدیم که با آن می‌توانستیم به سادگی داده‌ها را به ترتیب نگه داریم و به هر خانه با اندیس مشخصی دسترسی داشته باشیم. در این جلسه سه ساختمان‌داده دیگر نیز معرفی خواهد شد.
+
+## ۱) مجموعه (set)
+اگر بخواهیم داده‌هایی را به صورت غیرتکراری نگه داریم، می‌توانیم از داده‌ساختار `set` استفاده کنیم. در قطعه کد زیر عملیات‌های اولیه‌ای که روی یک مجموعه می‌توانیم انجام دهیم، معرفی شده است.
 ```python
-s1 = {}
-s2 = set()
-directors = {'Fellini', 'Bergman', 'Kieslowski'}
+s1 = {}     # Create an empty set
+s2 = set()  # Create an empty set
+directors = {'Fellini', 'Bergman', 'Kieslowski'}    # Create a set of strings
+print(directors)    # Print set members
+directors.add('Fellini')    # Add a member to the set
 print(directors)
-directors.add('Fellini')
+directors.pop()             # Delete a member of set
 print(directors)
-directors.pop()
-print(directors)
-dir2 = directors.union({'Mehjuyee','Hatami', 'Beyzaee'})
+dir2 = directors.union({'Mehjuyee','Hatami', 'Beyzaee'})    # Union of two sets
 print(dir2)
-print(directors.intersection({'Tarkowski', 'Wajda', 'Bergman'}))
+print(directors.intersection({'Tarkowski', 'Wajda', 'Bergman'}))    # Intersection of two sets
 print(set(l3))
-print(list(directors))
+print(list(directors))    # Convert a set to list
 print(list(set(l3)))
 ```
-## واژه‌نامه (dictionary)
+
+## ۲) واژه‌نامه (dictionary)
 ```python
 aircrafts = {'F4':'Phantom',
              'F5': 'Tiger',

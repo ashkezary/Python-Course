@@ -131,7 +131,7 @@ x = int(input())
 print(dollar_to_rial(x))
 ```
 ### مثال ۸: تابع کف (floor)
-**روش یک:**
+**روش یک.**
 ```python
 def floor(x):
  y = int(x)

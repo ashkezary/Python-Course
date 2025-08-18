@@ -1,8 +1,6 @@
-# جلسه سیزدهم
+# جلسه سیزدهم ساختمان داده
 
-# ساختمان داده
-
-5⃣ معرفی داده‌ساختار مجموعه (set)
+## مجموعه (set)
 ```python
 s1 = {}
 s2 = set()
@@ -19,7 +17,7 @@ print(set(l3))
 print(list(directors))
 print(list(set(l3)))
 ```
-6⃣ معرفی داده‌ساختار واژه‌نامه (dictionary)
+## واژه‌نامه (dictionary)
 ```python
 aircrafts = {'F4':'Phantom',
              'F5': 'Tiger',
@@ -35,7 +33,7 @@ aircrafts.items()
 for x,y in aircrafts.items():
     print(x,y)
 ```
-1⃣ چند نکته تکمیلی در مورد دیکشنری
+### نکاتی در مورد دیکشنری
 
 - تفاوت get و [] برای دسترسی به مقدار یک کلید
 - تغییر مقدار به کمک [] و update

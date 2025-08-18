@@ -40,9 +40,7 @@ jang
   برنامه را تمام کنید.
 
 
-# مثال
-
-## ورودی نمونه ۱
+**ورودی نمونه:**
 ```
 add MorgheSahar Mahoor
 add Rabbana Afshari
@@ -53,7 +51,7 @@ print
 exit
 ```
 
-## خروجی نمونه ۱
+**خروجی نمونه:**
 ```
 {'Afshari': ['Rabbana'], 'BayatTork': ['AndakAndak'], 'Mahoor': ['MorgheSahar'], 'Shoor': ['AshofteHali', 'ManMandamTanhayeTanha']}
 ```

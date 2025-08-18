@@ -22,24 +22,24 @@ print(list(set(l3)))
 ```
 
 ## ۲) واژه‌نامه (dictionary)
+اگر بخواهیم داده‌هایی را به صورت (کلید و مقدار) ذخیره کنیم، می‌توانیم از واژه‌نامه یا دیکشنری استفاده کنیم. در قطعه کد زیر عملیات‌های اولیه‌ای که می‌توانیم روی واژه‌نامه انجام دهیم، آورده شده است:
 ```python
 aircrafts = {'F4':'Phantom',
              'F5': 'Tiger',
-             'F14': 'Tomcat'}
+             'F14': 'Tomcat'}    # Create a dictionary
 print(aircrafts)
-print(aircrafts['F4'])
-print(aircrafts.keys())
-aircrafts['F16'] = 'Falcon'
+print(aircrafts['F4'])    # Return the value of the key 'F4'
+print(aircrafts.keys())   # Return all keys
+aircrafts['F16'] = 'Falcon'    # Create a new item or Change the value of a key
 print(aircrafts)
-print(aircrafts.values())
-print(aircrafts.get('F14'))
-aircrafts.items()
+print(aircrafts.values())     # Return the values of dictionaries
+print(aircrafts.get('F14'))   # Return the value of the key 'F14'
+aircrafts.items()             # Return all key/values of dictionary
 for x,y in aircrafts.items():
     print(x,y)
 ```
-### نکاتی در مورد دیکشنری
-
-- تفاوت get و [] برای دسترسی به مقدار یک کلید
+### چند نکته:
+۱- برای دسترسی به مقدار یک کلید، هم می‌توانیم از get استفاده کنیم و هم [].
 - تغییر مقدار به کمک [] و update
 - نحوه ادغام دو دیکشنری به کمک update
 

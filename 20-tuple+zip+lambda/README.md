@@ -88,4 +88,10 @@ myadd1 = lambda x,y: x+y
 ```python
 name = lambda parameters: expression
 ```
-پس از آن با استفاده از name مشابه توابعی که پیشتر داشتیم، می‌توانیم از تابع لامبدا نیز استفاده کنیم.
+پس از آن با استفاده از name مشابه توابعی که پیشتر داشتیم، می‌توانیم از تابع لامبدا نیز استفاده کنیم. به طور کلی یک کاربرد اولیه تابع لامبدا در جایی است که تابع ما مستقیماً برحسب ورودی‌ها، عملیات انجام داده و return می‌کند. مورد زیر مثال دیگری از این استفاده است:
+```python
+def name_print(name, family):
+    return name.title() + " " + family.title()
+
+name_print_lambda = lambda name, family: name.title()+" "+family.title()
+```

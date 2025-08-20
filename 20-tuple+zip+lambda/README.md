@@ -113,4 +113,36 @@ names.sort(key = lambda name: name.split()[-1])
 myadd1 = lambda x,y: x+y
 print(type(myadd1))
 ```
-خروجی `<class 'function'>` خواهد شد.
+خروجی `<class 'function'>` خواهد شد. این موضوع، می‌تواند استفاده‌های گوناگونی برایمان داشته باشد، برای مثال می‌توانید تابعی داشته باشید که یک تابع به شما برگرداند:
+```python
+def func(n):
+    return lambda a: a*n
+# a*2
+doubler = func(2)
+print(doubler(3))
+quintipler = func(5)
+print(quintipler(3))
+print(type(func(3)))
+```
+در قطعه کد بالا، تابع func گویی تابع سازنده‌ی چندبرابرساز است. یعنی مثلاً `func(2)` تابع دوبرابرساز را به ما برمی‌گرداند.
+
+**مثال دیگر.** تابع محاسبه‌کننده قیمت با دادن زمان شروع و نرخ ساعتی
+```python
+def price_calc(start,hourly_rate):
+    return lambda hours: start + hourly_rate * hours
+    
+walkin_cost = price_calc(10,30)
+premium_cost = price_calc(1,25)
+print(walkin_cost(2))
+print(premium_cost(2))
+```
+### کاربرد چهار: تابع، از تولید به مصرف
+به کمک تابع لامبدا، می‌توانیم درجا تابعی بنویسیم و همانجا از آن استفاده کنیم.
+```python
+print((lambda a,b,c: a+b+c)(2,3,4))
+```
+**مثال:** چندین متغیر
+اگر چندین متغیر داشتیم می‌توانیم با unzip کردن به شکل زیر آن‌ها را استفاده کنیم:
+```python
+print((lambda *args: sum(args))(2,3,4,50))
+```

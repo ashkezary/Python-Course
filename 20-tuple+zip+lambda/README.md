@@ -75,3 +75,12 @@ names = ['Phantom', 'Tiger', 'Tomcat', 'Falcon']
 mydict = dict(zip(fighters, names))
 ```
 # تابع لامبدا
+هرگاه بخواهیم به طور مختصر تابعی را بنویسیم، می‌توانیم از تابع لامبدا استفاده کنیم. برای مثال، تابع زیر را درنظر بگیرید:
+```python
+def myadd(x,y):
+    return x+y
+```
+به کمک lambda می‌توانیم این تابع را به این صورت بنویسیم:
+```python
+myadd1 = lambda x,y: x+y
+```

@@ -46,6 +46,32 @@ print(y)
 ('F-4', 'F-5', 'F-14', 'F-16')
 ('Phantom', 'Tiger', 'Tomcat', 'Falcon')
 ```
-توجه کنید که با دستور `zip(*)` نمی‌توان دیکشنری را تجزیه کرد. برای تجزیه مقادیر دیکشنری به راحتی می‌توانید از `dict.keys()` و `dict.values()` استفاده کرد.
+**نکته ۱.** توجه کنید که با دستور `zip(*)` نمی‌توان دیکشنری را تجزیه کرد. برای تجزیه مقادیر دیکشنری به راحتی می‌توانید از `dict.keys()` و `dict.values()` استفاده کرد.
 
+**نکته ۲.** عملیات zip کردن و unzip کردن را می‌توان روی بیش از دو لیست نیز انجام داد. برای مثال، در قطعه کد زیر سه لیست با هم zip شده‌اند:
+```python
+number = [1,2,3,4]
+fighters = ['F-4', 'F-5', 'F-14', 'F-16']
+names = ['Phantom', 'Tiger', 'Tomcat', 'Falcon']
+for w, x, y in zip(number, fighters, names):
+    print(w, x, y)
+```
+
+**نکته ۳.** یک کاربرد بسیار کمک‌کننده‌ی zip ساختن دیکشنری از روی دو لیست است. اگر بخواهیم بدون zip این کار را انجام دهیم، به شکل زیر انجام می‌دهیم:
+```python
+fighters = ['F-4', 'F-5', 'F-14', 'F-16']
+names = ['Phantom', 'Tiger', 'Tomcat', 'Falcon']
+i = 0
+n = len(names)
+mydict = {}
+while i<n:
+    mydict[fighters[i]] = names[i]
+    i += 1
+```
+ولی با استفاده از zip به سادگی و به شکل زیر می‌توانیم این کار را انجام دهیم:
+```python
+fighters = ['F-4', 'F-5', 'F-14', 'F-16']
+names = ['Phantom', 'Tiger', 'Tomcat', 'Falcon']
+mydict = dict(zip(fighters, names))
+```
 # تابع لامبدا

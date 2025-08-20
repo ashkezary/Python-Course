@@ -84,3 +84,8 @@ def myadd(x,y):
 ```python
 myadd1 = lambda x,y: x+y
 ```
+قالب کلی تابع lambda به شکل زیر است:
+```python
+name = lambda parameters: expression
+```
+پس از آن با استفاده از name مشابه توابعی که پیشتر داشتیم، می‌توانیم از تابع لامبدا نیز استفاده کنیم.

@@ -95,3 +95,12 @@ def name_print(name, family):
 
 name_print_lambda = lambda name, family: name.title()+" "+family.title()
 ```
+کاربرد مهم دیگر تابع لامبدا این است که می‌توان آن را راحت‌تر به عنوان یک پارامتر به برخی از توابع داد. مثلاً تابع آماده `sort` این امکان را دارد که در آن مشخص کنید که بر چه اساس می‌خواهید مرتب‌سازی را انجام دهید. مثال زیر را درنظر بگیرید:
+```python
+names = ['Abbas Babaee', 'Mahmood Eskandari', 'Jafar Varaste', 'Yadi Sharifi', 'Manoochehr Mohagheghi']
+names.sort()
+```
+در این حالت به طور عادی لیست با حرف اول رشته‌ها مرتب می‌شود. حال اگر بخواهیم لیست بر حسب نام خانوادگی مرتب شود، می‌توانیم به شکل زیر از تابع لامبدا استفاده کنیم:
+```python
+names.sort(key = lambda name: name.split()[-1])
+```

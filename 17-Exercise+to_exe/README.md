@@ -45,7 +45,7 @@ class FootballPlayer:
               f"Number: {self.number}")
 
 # Example usage:
-player = FootballPlayer("Lionel Messi", 36, 72, "Inter Miami", 10)
+player = FootballPlayer("Ronaldinho", 36, 72, "Barcelona", 10)
 player.display_info()
 player.shoot()
 player.pass_ball()

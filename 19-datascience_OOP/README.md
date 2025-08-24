@@ -77,3 +77,31 @@ plt.xlabel('something')
 plt.grid()
 plt.show()
 ```
+اگر بخواهیم چند نمودار را در یک قاب تصویر داشته باشیم، می‌توانیم از دستور `subplot` به شکل زیر استفاده کنیم:
+```python
+# The code is from w3school
+import matplotlib.pyplot as plt
+import numpy as np
+
+#plot 1:
+x = np.array([0, 1, 2, 3])
+y = np.array([3, 8, 1, 10])
+
+plt.subplot(1, 2, 1)
+plt.plot(x,y)
+
+#plot 2:
+x = np.array([0, 1, 2, 3])
+y = np.array([10, 20, 30, 40])
+
+plt.subplot(1, 2, 2)
+plt.plot(x,y)
+
+plt.show()
+```
+برای رسم هر کدام از نمودارهای نقطه‌ای، میله‌ای و ... هم می‌توانیم از توابع خاص خودشان استفاده کنیم. برای مثال با قطعه کد زیر می‌توانیم نمودار نقطه‌ای رسم کنیم:
+```python
+plt.scatter(x, y, s = list, color = 'red')
+#cmap: colormap
+#alpha: transparency
+```

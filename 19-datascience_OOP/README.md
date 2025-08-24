@@ -99,9 +99,39 @@ plt.plot(x,y)
 
 plt.show()
 ```
-برای رسم هر کدام از نمودارهای نقطه‌ای (scatter)، میله‌ای (bar)، دایره‌ای (pie)، هیستوگرام (hist) و ... هم می‌توانیم از توابع خاص خودشان استفاده کنیم. برای مثال با قطعه کد زیر می‌توانیم نمودار نقطه‌ای رسم کنیم:
+برای رسم هر کدام از نمودارهای نقطه‌ای (scatter)، میله‌ای (bar)، دایره‌ای (pie)، هیستوگرام (hist) و ... هم می‌توانیم از توابع خاص خودشان استفاده کنیم. در ادامه نمونه‌ کدی از هر کدام ذکر شده است:
+
+۱- نمودار نقطه‌ای
 ```python
 plt.scatter(x, y, s = list, color = 'red')
 #cmap: colormap
 #alpha: transparency
+```
+۲- نمودار میله‌ای
+```python
+plt.bar(x,y, width=0.1)
+```
+اگر بخواهیم نمودار میله‌ای به شکل افقی رسم شود، می‌توانیم از `barh` استفاده کنیم.
+
+۳- نمودار دایره‌ای
+```python
+plt.pie(x, labels=list)
+```
+۴- هیستوگرام
+```python
+plt.hist(x)
+```
+
+روشن است که هر کدام از این نمودارها قابلیت‌های بیشتری دارند که ما به آن‌ها نمی‌پردازیم. برای مثال، قطعه کد زیر یک نمودار نقطه‌ای زیباتر را نشان می‌دهد:
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+x = np.random.randint(100, size=(100))
+y = np.random.randint(100, size=(100))
+colors = np.random.randint(100, size=(100))
+sizes = 10 * np.random.randint(100, size=(100))
+plt.scatter(x, y, c=colors, s=sizes, alpha=0.5,
+cmap='nipy_spectral')
+plt.colorbar()
+plt.show()
 ```

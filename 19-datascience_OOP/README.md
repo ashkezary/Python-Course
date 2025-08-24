@@ -30,6 +30,28 @@ print(newarr.dtype)
 float64
 int32
 ```
+### تغییر ابعاد
+در قطعه کد زیر یک آرایه یک بعدی به آرایه دوبعدی `4x3` تبدیل شده و سپس به همان حالت یک بعدی بازگردانده شده است.
+```python
+import numpy as np
+arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
+print(arr.shape)
+newarr = arr.reshape(4, 3)
+print(newarr)
+print(newarr.shape)
+initial_arr = newarr.reshape(-1)
+print(initial_arr)
+```
+خروجی کد بالا، چنین خواهد شد:
+```
+(12,)
+[[ 1  2  3]
+ [ 4  5  6]
+ [ 7  8  9]
+ [10 11 12]]
+(4, 3)
+[ 1  2  3  4  5  6  7  8  9 10 11 12]
+```
 
 ## معرفی کتابخانه matplotlib
 برای رسم نمودار

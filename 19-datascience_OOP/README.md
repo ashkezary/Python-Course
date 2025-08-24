@@ -52,6 +52,7 @@ print(initial_arr)
 (4, 3)
 [ 1  2  3  4  5  6  7  8  9 10 11 12]
 ```
+برای دیدن کارکردها و قابلیت‌های بیشتر `numpy` می‌توانید سایت [W3School](https://www.w3schools.com/python/numpy/default.asp) را ملاحظه کنید.
 
 ## معرفی کتابخانه matplotlib
 برای رسم نمودار

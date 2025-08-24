@@ -55,4 +55,14 @@ print(initial_arr)
 برای دیدن کارکردها و قابلیت‌های بیشتر `numpy` می‌توانید سایت [W3School](https://www.w3schools.com/python/numpy/default.asp) را ملاحظه کنید.
 
 ## معرفی کتابخانه matplotlib
-برای رسم نمودار
+برای رسم نمودار از روی داده‌ها و دیداری‌سازی آن‌ها، کتابخانه‌ی `matplotlib` یک کتابخانه‌ی مادر است که امکان رسم انواع نمودارهای پایه و انجام تنظیمات روی آن‌ها را مدیریت می‌کند. برای مثال در شکل زیر نمودار ساده‌ای از کتابخانه `pandas` نمایش داده می‌شود:
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv('data.csv')
+
+df.plot(kind = 'scatter', x = 'Duration', y = 'Calories')
+
+plt.show()
+```

@@ -61,8 +61,19 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 df = pd.read_csv('data.csv')
-
 df.plot(kind = 'scatter', x = 'Duration', y = 'Calories')
-
+plt.show()
+```
+یک مزیت plt این است که به صورت لایه لایه می‌شود بخش‌هایی را به آن اضافه کرد. در قطعه کد زیر نمونه‌ای از آن ملاحظه می‌کنید:
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+xpoints = np.array([0, 3, 6])
+ypoints = np.array([0, 100, 250])
+#default xpoint
+plt.plot(xpoints, ypoints, 'o') # marker|line|color
+plt.plot(xpoints, ypoints, ms=10)
+plt.xlabel('something')
+plt.grid()
 plt.show()
 ```

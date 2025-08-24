@@ -104,8 +104,6 @@ plt.show()
 ۱- نمودار نقطه‌ای
 ```python
 plt.scatter(x, y, s = list, color = 'red')
-#cmap: colormap
-#alpha: transparency
 ```
 ۲- نمودار میله‌ای
 ```python
@@ -135,3 +133,4 @@ cmap='nipy_spectral')
 plt.colorbar()
 plt.show()
 ```
+در این نمودار `alpha` برای مشخص کردن شفافیت به کار رفته و `cmap` نیز برای مشخص کردن یک طیف رنگی.

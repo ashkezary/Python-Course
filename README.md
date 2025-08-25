@@ -20,11 +20,11 @@
 - [جلسه دوازدهم](https://github.com/ashkezary/Python-Course/tree/master/12-Libraries): کتابخانه‌ها (math و random)
 - [جلسه سیزدهم](https://github.com/ashkezary/Python-Course/tree/master/13-DataStructures): داده‌ساختارها (set و dictionary)
 - [جلسه چهاردهم](https://github.com/ashkezary/Python-Course/tree/master/14-Exercise): حل تمرین
-- [جلسه پانزدهم](): کار با فایل
-- [جلسه شانزدهم](): مدیریت خطا
-- [جلسه هفدهم](): آشنایی با برنامه‌نویسی شیءگرا
-- [جلسه هجدهم](): مقدمات تحلیل داده (Jupyter و pandas)
-- [جلسه نوزدهم](): مقدمات تحلیل داده (numpy و seaborn)
-- [جلسه بیستم](): چندتایی (tuple)، زیپ کردن و تابع لامبدا
+- [جلسه پانزدهم](https://github.com/ashkezary/Python-Course/tree/master/15-Files): کار با فایل
+- [جلسه شانزدهم](https://github.com/ashkezary/Python-Course/tree/master/16-Exception): مدیریت خطا
+- [جلسه هفدهم](https://github.com/ashkezary/Python-Course/tree/master/17-to_exe%2BOOP): آشنایی با برنامه‌نویسی شیءگرا
+- [جلسه هجدهم](https://github.com/ashkezary/Python-Course/tree/master/18-DataAnalysis(I)): مقدمات تحلیل داده (Jupyter و pandas)
+- [جلسه نوزدهم](https://github.com/ashkezary/Python-Course/tree/master/19-DataAnalysis(II)): مقدمات تحلیل داده (numpy و seaborn)
+- [جلسه بیستم](https://github.com/ashkezary/Python-Course/tree/master/20-tuple%2Bzip%2Blambda): چندتایی (tuple)، زیپ کردن و تابع لامبدا
 
 برای دیدن جزییات بخش نظری درس که آقای دکتر فرشی ارائه می‌کردند، می‌توانید [این آدرس](https://pws.yazd.ac.ir/farshi/Teaching/Mabani-Mec-4031/Mabani.html) را نگاه کنید.

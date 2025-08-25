@@ -6,11 +6,11 @@
 جزوات بالا، درون‌مایه‌ی اصلی بخش عملی درس **«مبانی برنامه‌نویسی کامپیوتر و آزمایشگاه»** بوده که در دانشگاه یزد و برای دانشجویان مهندسی مکانیک ارائه شده است.
 
 ## فهرست
-- جلسه یکم: نصب و راه‌اندازی، خروجی دادن
-- جلسه دوم: انواع داده‌ها، ورودی گرفتن
-- جلسه سوم: حل تمرین
-- جلسه چهارم: شرط و لیست
-- جلسه پنجم: Split و Join
+- [جلسه یکم](https://github.com/ashkezary/Python-Course/tree/master/01-Introduction): نصب و راه‌اندازی، خروجی دادن
+- [جلسه دوم](https://github.com/ashkezary/Python-Course/tree/master/02-InputOutput%2BDataType): انواع داده‌ها، ورودی گرفتن
+- [جلسه سوم](https://github.com/ashkezary/Python-Course/tree/master/03-Exercise): حل تمرین
+- [جلسه چهارم](https://github.com/ashkezary/Python-Course/tree/master/04-List%2BCondition): شرط و لیست
+- [جلسه پنجم](https://github.com/ashkezary/Python-Course/tree/master/05-SplitJoin): Split و Join
 - جلسه ششم: حلقه while
 - جلسه هفتم: هفت مثال از حلقه
 - جلسه هشتم: حلقه for

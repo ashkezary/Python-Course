@@ -15,7 +15,7 @@ aircrafts = ['F-4', 'F-5']
 # Append a new member to the list
 aircrafts.append('F-14')
 # Find a member in a list and return its first index
-aircrafts.find('F-4')
+aircrafts.index('F-4')
 # Count the repeatition of a member
 aircrafts.count('F-4')
 print(aircrafts[1])

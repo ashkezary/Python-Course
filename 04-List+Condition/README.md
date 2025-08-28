@@ -40,7 +40,7 @@ Act 3
 ### مثال ۱: یک شرط ساده
 
 ```python
-x = 2
+x = int(input())
 if x>0:
 	print('Positive')
 if x<0:

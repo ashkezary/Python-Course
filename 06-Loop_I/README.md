@@ -61,5 +61,6 @@ text = ""
 while i<n:
   s = input()
   text = text+s
+  i = i+1
 print(text)
 ```

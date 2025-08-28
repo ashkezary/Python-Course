@@ -10,16 +10,29 @@ list3 = [1,2,3]
 list4 = ['a', 'baba', 3, True]
 ```
 بر روی لیست‌ها می‌توانیم کارهای مختلفی را انجام دهیم؛ افزودن یک عضو، دسترسی به یک عضو، به‌هم‌چسباندن، شمارش اعضا و ... .
+
+**۱) دسترسی به یک عضو یا محدوده**:
+```python
+print(aircrafts[1])
+print(aircrafts[1:5])
+```
+**۲) افزودن یک عضو**: با دستور `append` می‌توانید یک عضو به انتهای لیست بیفزایید.
 ```python
 aircrafts = ['F-4', 'F-5']
 # Append a new member to the list
 aircrafts.append('F-14')
+```
+**۳) جستجو**: با دستور `in` می‌توانید چک کنید که آیا چیز مشخصی، عضوی از لیست مورد نظر هست یا نه؟ و با دستور `index` مشابه `find` برای رشته‌های اندیس اولین رخداد آن را ببینید. توجه کنید که برای لیست‌ها، دستور `find` کار نمی‌کند.
+```python
+if 'F-14' in aircrafts:
+	print("Hoora! We have tomcats!")
 # Find a member in a list and return its first index
 aircrafts.index('F-4')
+```
+**۴) شمارش** : دستور `count` تعداد تکرار یک عضو را در لیست برمی‌گرداند.
+```python
 # Count the repeatition of a member
 aircrafts.count('F-4')
-print(aircrafts[1])
-print(aircrafts[1:5])
 ```
 علاوه بر موارد ذکر شده، لیست‌ها توابع دیگری هم دارند که با گذاشتن نقطه پس از نام یک لیست می‌توانید فهرست آن‌ها را ببینید.
 
